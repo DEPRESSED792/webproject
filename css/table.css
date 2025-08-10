@@ -1,0 +1,60 @@
+table, th, td{
+    border: 2px solid black;
+    width: 2px; 
+    height: 15px;
+   border-collapse: collapse;
+}
+tr{
+ border-bottom: 2px solid black;
+}
+tr:hover{
+    background-color: aquamarine;
+}
+/*td {
+    border: 2px solid rgb(255, 0, 242);
+}*/
+table {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+}
+/*.width1{
+    width: 60%;
+}
+.width2{
+    width: 40%;
+}8*/
+.test{
+    transform: rotate(90deg) ;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.butb{
+    border-bottom-color: aqua;
+}
+.clsup{
+    height: 1px;
+    background-color: azure;
+    
+}
+.ggg{
+    background-color: rgb(12, 12, 205);
+
+}
+
+td{
+    width: 2px;
+}
+.thre{
+    width: 10%;
+    height: 10px;
+    border-spacing: 20px;
+}
+tr:nth-child(even) {
+    background-color: aqua;
+}
+th:nth-child(even), td:nth-child(even) {
+    background-color: aqua;
+}

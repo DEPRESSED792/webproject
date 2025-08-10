@@ -1,0 +1,427 @@
+   /* General Body and Base Styles (existing) */
+body {
+    margin: 0;
+    color: #E0E1DD;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #005F73, #0A9396); /* Added a default font-family for better consistency */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+li {
+    float: right;
+}
+li a {
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+span:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.gbola {
+    float: right;
+    align-items: center;
+    justify-content: center;
+    margin: 1px ;
+    color: white;
+}
+li a {
+    color: white;
+}
+.header {
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Added for better background image positioning */
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex; /* Use flexbox for better alignment of children */
+    flex-direction: column;
+}
+
+.tk {
+    display: flex;
+    justify-content: space-between; /* Space out the title and nav */
+    align-items: center;
+    padding: 10px 20px; /* Add some padding */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.fixed {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.yju {
+    text-align: center;
+    margin-top: auto; /* Push content to the bottom of the header section */
+    margin-bottom: auto; /* Center vertically within remaining space */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    flex-grow: 1; /* Allow it to take up available space */
+    display: flex; /* Use flexbox for vertical centering of content */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Add padding to prevent content from touching edges */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure image covers the circle */
+}
+
+:active {
+    position:relative; /* Changed from absolute, absolute can cause layout issues. Relative is safer. */
+}
+.itire {
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 50px;
+    background-color: #fff;
+    width: 90px;
+    padding: 10px 10px;
+    font-family: Arial, sans-serif;
+    margin: 20px auto; /* Increased margin for spacing */
+    justify-content: center; /* Center content within the button */
+}
+
+.fa-search:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+/* Unused/commented out selectors removed for clarity */
+
+.myfcontainer {
+    border: none;
+    cursor: pointer; /* Changed to pointer for better UX */
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent; /* Ensure button background is transparent */
+    color: black; /* Explicitly set color */
+}
+
+.follow {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    margin-top: 30px; /* Added spacing */
+}
+
+.buffer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default for larger screens */
+    gap: 20px; /* Added gap between grid items */
+    justify-content: center;
+    align-items: start; /* Align items to the start of their grid area */
+    padding: 50px; /* Original padding */
+}
+.contain {
+    width: 100%; /* Make width 100% within its grid column */
+    max-width: 350px; /* Max width for individual containers */
+    height: auto; /* Allow height to adjust based on content */
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 16px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    text-align: center; /* Center text within the container */
+    margin: 0 auto; /* Center the box if it doesn't take full grid width */
+}
+.contain h3 {
+    margin-top: 10px; /* Adjusted for better spacing */
+    font-size: 18px;
+}
+.contain p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.icon {
+    display: block;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray; /* Added a background for the icon circle */
+}
+.icon img {
+    width: 100%; /* Make image fill the icon div */
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure image covers the circle */
+}
+.gonter {
+    border: 2px solid black;
+    width: 90%;
+    height: auto; /* Allow height to adjust */
+    border-radius: 10px;
+    padding: 20px; /* Increased padding */
+    margin: 30px auto; /* Added margin for spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    line-height: 1.6; /* Improved readability */
+    text-align: justify; /* Justify text for better appearance */
+}
+.gonter h3 {
+    margin-bottom: 20px; /* Spacing below heading */
+}
+.gonter:hover {
+    background-color: #1B263B;
+    box-shadow: 4px 4px 15px black;
+}
+
+.contain:hover {
+    background-color: #1B263B;
+    box-shadow: 4px 4px 15px black;
+}
+
+/* Mobile Navigation Specific Styles */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.menu-icon {
+    display: none; /* Hidden by default, shown on mobile */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above other elements */
+    margin-right: 15px; /* Spacing from search icon if both are shown */
+}
+.boxeda {
+        flex: 1 1 45%;
+ /* Full width on smaller screens */
+        box-shadow:  0 4px 8px rgba(0,0,0,0.2);
+        border: 4px solid black;
+        padding: 20px;
+        border-radius: 10px;
+}
+.boxedb {
+        flex: 1 1 45%;
+        box-shadow:  0 8px 16px rgba(0,0,0,0.2);
+        border: 4px solid black;
+        padding: 10px;
+        border-radius: 10px;
+}
+.boxedc {
+        width: 50%; /* Full width on smaller screens */
+        box-shadow:  0 8px 16px rgba(0,0,0,0.2);
+        border: 4px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        margin: auto;
+
+}
+.section-cont{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.boxeda:hover {
+    background-color: #1B263B;
+    box-shadow: 4px 4px 15px black;
+    border: none;
+}
+.boxedb:hover {
+    background-color: #1B263B;
+    box-shadow: 4px 4px 15px black;
+    border: none;
+}
+.boxedc:hover {
+    background-color: #1B263B;
+    box-shadow: 4px 4px 15px black;
+    border: none;
+}
+.video {
+    margin-left: 375px;
+}
+.liki {
+    width: 1000px;
+    padding: 150px;
+}
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (Tablets and Phones) */
+@media screen and (max-width: 768px) {
+    .tk {
+        flex-direction: row-reverse; /* Put menu icon on the right */
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .liki {
+        width: 500px;
+        height: 600px;
+        padding: 70px;
+    }
+    .gbola {
+        display: none; /* Hide desktop navigation by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Dark overlay for menu */
+        z-index: 1000;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        max-height: 0; /* Hidden by default */
+        overflow: hidden;
+        transition: max-height 0.5s ease-out; /* Smooth slide effect */
+    }
+
+    .gbola li {
+        float: none; /* Stack list items vertically */
+        text-align: center;
+        width: 100%;
+    }
+
+    .gbola li a {
+        padding: 15px;
+        display: block; /* Make links block level to fill width */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separator */
+    }
+
+    .gbola li:last-child a {
+        border-bottom: none; /* No separator for the last item */
+    }
+
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+    }
+
+    .menu-toggle:checked + .menu-icon + .gbola {
+        display: flex; /* Show navigation when checkbox is checked */
+        max-height: 300px; /* A value larger than the menu's actual height */
+    }
+
+    /* Adjust header and hero section for smaller screens */
+    .header {
+        height: 60vh; /* Shorter header on mobile */
+    }
+
+    .yju {
+        margin-top: 50px; /* Adjust top margin for hero content */
+        font-size: 24px;
+    }
+
+    .yju p:last-child { /* Tagline */
+        font-size: x-small; /* Keep it small */
+    }
+
+    /* Game showcase - stack items vertically */
+    .buffer {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .contain {
+        margin-bottom: 20px; /* Add space between stacked items */
+        width: 100%; /* Ensure full width */
+        max-width: none; /* Remove max-width on smaller screens */
+        height: auto; /* Ensure height adjusts */
+    }
+
+    .gonter {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .itire {
+        margin: 20px auto;
+    }
+
+    .follow p {
+        font-size: 14px;
+    }
+    .boxeda, .boxedb, .boxedc {
+        flex: 1 1 45%; /* Full width on smaller screens */
+        box-shadow:  0 8px 16px rgba(0,0,0,0.2);
+        border: 4px solid #ccc;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    .boxedc {
+        width: 90%; /* Full width on smaller screens */
+        box-shadow:  0 8px 16px rgba(0,0,0,0.2);
+        border: 4px solid #ccc;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+}
+
+/* For even smaller screens (e.g., typical phones, less than 480px) */
+@media screen and (max-width: 480px) {
+    .fixed {
+        font-size: 18px; /* Smaller title font */
+    }
+
+    .fa-search { /* Hide search icon to save space */
+        display: none;
+    }
+
+    .yju {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .gonter h3 {
+        font-size: 18px;
+    }
+
+    .gonter p {
+        font-size: 13px;
+    }
+
+    .itire {
+        width: 100px;
+        padding: 8px 8px;
+    }
+
+    .myfcontainer {
+        font-size: 15px;
+    }
+}
+
+/* Basic styling for the search icon when it's part of the nav */
+.gbola li .fa-search {
+    padding: 14px 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: white; /* Ensure search icon color is white */
+    
+}
+        
